@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange System Securities</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 10;
+    }
+    .hero-overlay h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero-overlay p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+    }
+    .btn-orange {
+      background-color: #ff6600;
+      border: none;
+      padding: 12px 30px;
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .btn-orange:hover {
+      background-color: #e55b00;
+    }
+    .carousel-item img {
+      height: 100vh; /* Full screen height */
+      object-fit: cover;
+      filter: brightness(60%); /* dark overlay effect */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Carousel with Overlay -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" 
+              class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" 
+              aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" 
+              aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" class="d-block w-100" alt="Computers">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/futuristic-tech-repair-concept-laptop-260nw-2450529691.webp" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Hero Text Overlay -->
+    <div class="hero-overlay">
+      <h1>Securing Your Digital Future</h1>
+      <p>OrangeSystem and securities provides advanced hardware solutions and reliable system services to empower your business with high-performance technology and seamless support.</p>
+      <button class="btn-orange">Get in Touch</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
